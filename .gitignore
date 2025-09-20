@@ -1,0 +1,40 @@
+# Unity generated
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+MemoryCaptures/
+
+# Auto-generated VS/ Rider / OS / IDE files
+.vscode/
+*.csproj
+*.sln
+*.user
+*.suo
+*.unityproj
+.idea/
+*.pidb
+*.booproj
+*.svd
+
+# Mac / Windows
+.DS_Store
+Thumbs.db
+
+# Crashlytics / caches
+*.apk
+*.aab
+
+# Unity specific cache
+sysinfo.txt
+
+# Yarn / node (if any)
+node_modules/
+
+# Allow these (track ProjectSettings and Assets and .meta)
+!/[Pp]rojectSettings/
+!/[Aa]ssets/
+!/*.gitignore
