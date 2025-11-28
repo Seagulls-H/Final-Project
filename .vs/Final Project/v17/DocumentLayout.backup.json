@@ -82,8 +82,7 @@
               "RelativeToolTip": "Assets\\Script\\GameOver.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T17:32:40.893Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T17:32:40.893Z"
             },
             {
               "$type": "Document",
@@ -95,8 +94,7 @@
               "RelativeToolTip": "Assets\\Script\\HeartsUI.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAiwA8AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T15:41:42.958Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T15:41:42.958Z"
             },
             {
               "$type": "Document",
@@ -108,8 +106,7 @@
               "RelativeToolTip": "Assets\\Script\\PlayerHealth.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAiwDUAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T15:39:32.893Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T15:39:32.893Z"
             },
             {
               "$type": "Document",
@@ -121,8 +118,7 @@
               "RelativeToolTip": "Assets\\Script\\TimedMovingPlatform.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAiwCEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T19:05:40.349Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-24T19:05:40.349Z"
             },
             {
               "$type": "Document",
@@ -134,8 +130,7 @@
               "RelativeToolTip": "Assets\\Script\\EdgeShiftTrapPlatform.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAiwCcAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T18:48:47.572Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-24T18:48:47.572Z"
             },
             {
               "$type": "Document",
@@ -147,8 +142,7 @@
               "RelativeToolTip": "Assets\\Script\\ProximitySpike.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T18:27:18.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-24T18:27:18.005Z"
             },
             {
               "$type": "Document",
@@ -160,8 +154,7 @@
               "RelativeToolTip": "Assets\\Script\\ExitPortal.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T15:31:58.378Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-23T15:31:58.378Z"
             },
             {
               "$type": "Document",
@@ -173,8 +166,7 @@
               "RelativeToolTip": "Assets\\Script\\TeleportPlayer2D.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAiwBUAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T17:31:28.872Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-20T17:31:28.872Z"
             },
             {
               "$type": "Document",
@@ -186,8 +178,7 @@
               "RelativeToolTip": "Assets\\Script\\PlayerDeath.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAiwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T11:46:50.433Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-20T11:46:50.433Z"
             },
             {
               "$type": "Document",
@@ -199,8 +190,7 @@
               "RelativeToolTip": "Assets\\Script\\KillOnTouch.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T19:42:38.352Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T19:42:38.352Z"
             },
             {
               "$type": "Document",
@@ -212,8 +202,7 @@
               "RelativeToolTip": "Assets\\Script\\MovingTrapPlatform.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAAiwEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T18:42:10.315Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T18:42:10.315Z"
             },
             {
               "$type": "Document",
@@ -223,7 +212,7 @@
               "RelativeDocumentMoniker": "Assets\\Script\\CharacterSelectManager.cs",
               "ToolTip": "D:\\Code\\Final Project\\Assets\\Script\\CharacterSelectManager.cs",
               "RelativeToolTip": "Assets\\Script\\CharacterSelectManager.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAiwCUAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAiwBoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-02T13:50:38.407Z",
               "EditorCaption": ""
@@ -238,8 +227,7 @@
               "RelativeToolTip": "Assets\\Script\\MainMenu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T02:37:23.505Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-22T02:37:23.505Z"
             },
             {
               "$type": "Document",
@@ -251,8 +239,7 @@
               "RelativeToolTip": "Assets\\Script\\GameManager.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAiwEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T17:03:11.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-09T17:03:11.153Z"
             },
             {
               "$type": "Document",
@@ -264,8 +251,7 @@
               "RelativeToolTip": "Assets\\Script\\PlayerController.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAiwD8AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T16:23:36.404Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-09T16:23:36.404Z"
             }
           ]
         },
