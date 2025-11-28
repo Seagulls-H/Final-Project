@@ -1,4 +1,4 @@
-//This project is open source. Anyone can use any part of this code however they wish
+﻿//This project is open source. Anyone can use any part of this code however they wish
 //Feel free to use this code in your own projects, or expand on this code
 //If you have any improvements to the code itself, please visit
 //https://github.com/Dharengo/Spriter2UnityDX and share your suggestions by creating a fork
@@ -37,16 +37,24 @@ namespace Spriter2UnityDX.Prefabs {
 				var prefabPath = string.Format ("{0}/{1}.prefab", directory, entity.name);
 				var prefab = (GameObject)AssetDatabase.LoadAssetAtPath (prefabPath, typeof(GameObject));
 				GameObject instance;
-				if (prefab == null) { //Creates an empty prefab if one doesn't already exists
-					instance = new GameObject (entity.name);
-					prefab = PrefabUtility.CreatePrefab (prefabPath, instance, ReplacePrefabOptions.ConnectToPrefab);
-					ProcessingInfo.NewPrefabs.Add (prefab);
-				}
-				else {
-					instance = (GameObject)PrefabUtility.InstantiatePrefab (prefab); //instantiates the prefab if it does exist
-					ProcessingInfo.ModifiedPrefabs.Add (prefab);
-				}
-				try {
+                if (prefab == null)
+                { //Creates an empty prefab if one doesn't already exists
+                    instance = new GameObject(entity.name);
+                    // API mới: tạo prefab và connect instance
+                    prefab = PrefabUtility.SaveAsPrefabAssetAndConnect(
+                        instance,
+                        prefabPath,
+                        InteractionMode.AutomatedAction
+                    );
+                    ProcessingInfo.NewPrefabs.Add(prefab);
+                }
+                else
+                {
+                    instance = (GameObject)PrefabUtility.InstantiatePrefab(prefab); //instantiates the prefab if it does exist
+                    ProcessingInfo.ModifiedPrefabs.Add(prefab);
+                }
+                try
+                {
 					TryBuild (entity, prefab, instance, directory, prefabPath, folders);
 				}
 				catch (Exception e) {
@@ -155,12 +163,15 @@ namespace Spriter2UnityDX.Prefabs {
 					Debug.LogErrorFormat ("Unable to build animation '{0}' for '{1}', reason: {2}", animation.name, entity.name, e);
 				}
 			}
-			if (instance.GetComponent<EntityRenderer> () == null) instance.AddComponent<EntityRenderer> (); //Adds an EntityRenderer if one is not already present
-			PrefabUtility.ReplacePrefab (instance, prefab, ReplacePrefabOptions.ConnectToPrefab);
-			DestroyImmediate (instance); //Apply the instance's changes to the prefab, then destroy the instance.
-		}
+            if (instance.GetComponent<EntityRenderer>() == null)
+                instance.AddComponent<EntityRenderer>(); //Adds an EntityRenderer if one is not already present
 
-		private IList<TextureImporter> InvalidImporters = new List<TextureImporter> (); //Importers in this list have already been processed and don't need to be processed again
+            // API mới: lưu lại prefab với thay đổi từ instance
+            PrefabUtility.SaveAsPrefabAsset(instance, prefabPath);
+            DestroyImmediate(instance); //Apply the instance's changes to the prefab, then destroy the instance.
+        }
+
+        private IList<TextureImporter> InvalidImporters = new List<TextureImporter> (); //Importers in this list have already been processed and don't need to be processed again
 		private Sprite GetSpriteAtPath (string path, File file, ref bool success) {
 			var importer = TextureImporter.GetAtPath (path) as TextureImporter;
 			if (importer != null) { //If no TextureImporter exists, there's no texture to be found
@@ -169,7 +180,7 @@ namespace Spriter2UnityDX.Prefabs {
 					if (success) success = false; //If the texture type isn't Sprite, or the pivot isn't set properly, 
 					var settings = new TextureImporterSettings (); //set the texture type and pivot
 					importer.ReadTextureSettings (settings);	//and make success false so the process can abort
-					settings.ApplyTextureType (TextureImporterType.Sprite, true); //after all the textures have been processed
+					settings.ApplyTextureType (TextureImporterType.Sprite); //after all the textures have been processed
 					settings.spriteAlignment = (int)SpriteAlignment.Custom;
 					settings.spritePivot = new Vector2 (file.pivot_x, file.pivot_y);
                     if(ScmlImportOptions.options != null)

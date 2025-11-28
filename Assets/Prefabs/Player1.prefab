@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 4642468041091210537}
   - component: {fileID: 3482069076026343260}
   - component: {fileID: 2146906797277900766}
+  - component: {fileID: -6001527725008385675}
+  - component: {fileID: 9060458334750627400}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Player
@@ -102,7 +104,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 50d0548881e00fb448b0f6994080d238, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -176,7 +178,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 50d0548881e00fb448b0f6994080d238, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -200,12 +202,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 6
-  jumpForce: 6
+  jumpForce: 7
+  fallMultiplier: 2
+  lowJumpMultiplier: 2
   groundCheck: {fileID: 5638340527902527184}
   groundCheckRadius: 0.12
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &-6001527725008385675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5502690202819278309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96e447901da445c4abe990cecac2a198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnDelay: 1.2
+--- !u!114 &9060458334750627400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5502690202819278309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91176c65e61c2e44686de7046dcaea94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6895330188690841651
 GameObject:
   m_ObjectHideFlags: 0
